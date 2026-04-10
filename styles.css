@@ -1,0 +1,469 @@
+/* 1. RESET E CONFIGURAÇÕES GERAIS */ 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #0d0d0d;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 2. HEADER (LOGO PARA ESQUERDA E MENU PARA DIREITA) */
+header {
+  background: #0d0d0d;
+  padding: 25px 0;
+  border-bottom: 1px solid #222;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Menu de Navegação */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover, 
+.nav-menu a.active {
+  color: #e10600;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e10600;
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after, 
+.nav-menu a.active::after {
+  width: 100%;
+}
+
+/* 3. HOME */
+#hero {
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #e10600;
+}
+
+p a {
+  color: #e10600 !important;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+p a:hover {
+  border-bottom: 1px solid #e10600;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 6px 20px rgba(225, 6, 0, 0.4);
+}
+
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid #444;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  color: #e10600;
+  margin-bottom: 20px;
+}
+
+.equipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.membro-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.membro-card:hover {
+  transform: translateY(-10px);
+  border-color: #e10600;
+}
+
+.membro-foto-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #e10600;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.membro-foto-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.membro-card h4 {
+  color: #e10600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.membro-card p {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* 5. FORMULÁRIO E BOTÃO (PADRÃO DO SITE) */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: #111;
+  color: #fff;
+  box-sizing: border-box;
+  resize: none;
+}
+
+button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+button[type="submit"]:hover {
+  background-color: #b30500;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(225, 6, 0, 0.6);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e10600;
+  box-shadow: 0 0 8px rgba(225, 6, 0, 0.4);
+}
+
+/* 6. FOOTER E RESPONSIVIDADE */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #444;
+}
+
+/* BOTÃO HAMBURGUER */
+
+.hamburger {
+  display: none; 
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.text-image-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.content-left {
+  flex: 1;
+}
+
+.side-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.flag {
+  width: 42px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-ferrari {
+  width: 45px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-mclaren {
+  width: 65px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+.flag-pilotos {
+  width: 25px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-mercedes {
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-mercedesmotor {
+  width: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-redbull {
+  width: 55px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-ford {
+  width: 35px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-williams {
+  width: 60px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-aston {
+  width: 55px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-haas {
+  width: 45px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-alpine{
+  width: 60px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-audi {
+  width: 65px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-vcarb {
+  width: 55px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flag-cadillac {
+  width: 65px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.content-left ul {
+  margin-left: 20px;
+}
+
+/* CONTATO */
+
+.social-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #e10600;
+  color: #e10600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background: #e10600;
+  color: white;
+}
+
+/* MENU MOBILE */
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #0b0b1a;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 8px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-menu a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-menu {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .equipe-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

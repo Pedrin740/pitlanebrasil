@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre - Pit Lane Brasil</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo">Pit Lane Brasil</h1>
+
+    <!-- CORRIGIDO -->
+    <button class="hamburger" aria-label="Abrir menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-menu">
+      <a href="index1.html">Home</a>
+      <a href="sobre.html" class="active">Sobre</a>
+      <a href="equipes.html">Equipes</a>
+      <a href="contato.html">Contato</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section id="sobre" class="section">
+    <h3>O que é o Pit Lane Brasil? Quem somos nós?</h3>
+    <p>O Pit Lane Brasil é um espaço criado para quem vive a Fórmula 1 de verdade. Mais do que um simples site, ele reúne informações, histórias e curiosidades sobre as equipes e tudo o que acontece dentro e fora das pistas. Aqui, cada detalhe importa, desde a estratégia de corrida até os bastidores que o público nem sempre vê.</p>
+    <br></br>
+    <p>A proposta é aproximar os fãs do universo da F1 de forma simples e envolvente, trazendo conteúdo acessível tanto para quem está começando a acompanhar quanto para quem já acompanha o esporte há anos. O site nasce da paixão pelo automobilismo e do desejo de compartilhar essa experiência com outras pessoas que sentem a mesma adrenalina a cada corrida.</p>
+    <br></br>
+    <p>Agora que você já conhece o site, confira abaixo quem são nossos fundadores e também de uma conferida em nosso primeiro conteúdo <a href="equipes.html">Equipes</a>, que conta um pouquinho sobre as equipes presentes no grid de 2026!</p>
+  </section>
+  
+  <section id="equipe" class="section">
+    <div style="text-align: center;">
+      <h3>Equipe do Projeto</h3>
+      <p class="subtitulo">Conheça os integrantes responsáveis por este projeto.</p>
+    </div>
+
+    <div class="equipe-grid">
+      <div class="membro-card">
+        <div class="membro-foto-wrapper">
+          <img src="img/pedro-felipe.jpeg">
+        </div>
+        <h4>Pedro Felipe</h4>
+        <p>Apaixonado por Fórmula 1 desde cedo, Pedro Felipe é o criador do Pit Lane Brasil. Seu objetivo é compartilhar conhecimento, curiosidades e a emoção das corridas com outros fãs, trazendo conteúdo acessível e envolvente sobre as equipes e o mundo da F1. Unindo tecnologia e paixão pelo automobilismo, ele desenvolveu o site como um espaço para quem vive intensamente o esporte.</p>
+      </div>
+
+      <div class="membro-card">
+        <div class="membro-foto-wrapper">
+          <img src="img/ana-silva-pitlane-brasil.jpeg">
+        </div>
+        <h4>Ana Silva</h4>
+        <p>Ana Silva vive a Fórmula 1 diretamente das pistas. Como repórter, acompanha de perto os bastidores das equipes, entrevistas com pilotos e toda a movimentação dos finais de semana de corrida. Seu trabalho é levar ao público informações atualizadas e exclusivas, transmitindo a emoção do paddock e aproximando os fãs do universo da F1 como se estivessem lá.</p>
+      </div>
+
+      <div class="membro-card">
+        <div class="membro-foto-wrapper">
+          <img src="img/danilo-andrade-pitlane-brasil.png">
+        </div>
+        <h4>Danilo Andrade</h4>
+        <p>Danilo Andrade traz uma visão estratégica para o Pit Lane Brasil. Especialista em análise de dados e desempenho, ele interpreta números, estratégias e estatísticas das corridas para explicar o que realmente acontece dentro da pista. Seu olhar analítico transforma dados complexos em informações claras, ajudando os fãs a entenderem cada detalhe que influencia o resultado de um Grande Prêmio.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Pit Lane Brasil</p>
+  </div>
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

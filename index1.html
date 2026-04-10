@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pit Lane Brasil - O Brasil na Fórmula 1</title>
+  <meta name="description" content="Informações sobre as equipes de fórmula 1" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo">Pit Lane Brasil</h1>
+    <button class="hamburger" aria-label="Abrir menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="index1.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="equipes.html">Equipes</a>
+      <a href="contato.html">Contato</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h2>Fórmula 1: Conheça suas histórias, equipes, pilotos e curiosidades</h2>
+      <p>Se você curte Fórmula 1, aqui é o seu lugar. Conheça melhor as equipes que fazem o espetáculo acontecer, desde as mais lendárias até as que estão dominando hoje. Descubra histórias, curiosidades e tudo o que rola nos bastidores de cada equipe do grid. Se curtiu, já clique em <a href="sobre.html">Sobre</a> para conhecer quem somos nós!</p>
+    </div>
+    <div class="hero-image">
+      <img src="img/logo-formula 1.png" alt="Ilustração da logo da Fórmula 1" />
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Pit Lane Brasil. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+</script>
+</body>
+</html>
