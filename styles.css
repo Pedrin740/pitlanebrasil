@@ -465,4 +465,33 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  @media (max-width: 768px) {
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-image-container {
+    flex-direction: column;
+  }
+
+  .hero-image img,
+  .side-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .content-left {
+    width: 100%;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+}
 }
